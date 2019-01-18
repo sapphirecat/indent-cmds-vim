@@ -14,6 +14,15 @@ Your favorite plugin manager.
 
 Controls `tabstop`, `shiftwidth`, `softtabstop`, and `expandtab` options.
 
+IndentTab sets `noexpandtab`, makes `tabstop`=`shiftwidth`={the argument}, and
+sets `softtabstop` to 0.  One indent is represented by one tab character in
+the file.
+
+IndentSpace and IndentMix set `tabstop=8`, and `softtabstop`=`shiftwidth`={the
+argument}.  The difference is that IndentSpace sets `expandtab` so that only
+spaces are ever used.  IndentMix sets `noexpandtab` which lets higher indent
+levels lead with tabs, then switch to spaces.
+
 # Why though
 
 Through the years, I've edited a _lot_ of files from many authors.  I just
